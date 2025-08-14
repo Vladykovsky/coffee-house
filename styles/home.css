@@ -46,13 +46,14 @@ body main .preview {
     border-radius: 40px;
 }
 
-body main .preview div {
+body main .preview .cafe {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 530px;
     height: 444px;
-    padding: 100px 730px 100px 100px;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 body main .preview h1 {
@@ -69,14 +70,15 @@ body main .preview p {
     color: #E1D4C9;
 }
 
-body main .preview button {
-    background-color: #E1D4C9;
+body main .preview .cafe .menu-button {
+    background-image: url(../images/menu-default.svg);
     width: 200px;
     height: 64px;
     border-radius: 100px;
-    font: 600 16px Inter;
-    color: #403F3D;
-    border-width: 0;
+}
+
+body main .preview .cafe .menu-button:hover {
+    background-image: url(../images/menu-hover.svg);
 }
 
 body main .choose-coffee {
@@ -224,18 +226,27 @@ body main .mobile-app .about-app p {
 
 body main .mobile-app .about-app .shop {
     display: flex;
+    gap: 20px;
 }
 
 body main .mobile-app .about-app .store {
-    background-image: url(../images/button-app-store.svg);
+    background-image: url(../images/button-store.svg);
     width: 200px;
     height: 64px;
+}
+
+body main .mobile-app .about-app .store:hover {
+    background-image: url(../images/button-store-hover.svg);
 }
 
 body main .mobile-app .about-app .market {
     background-image: url(../images/button-google-play.svg);
     width: 200px;
     height: 64px;
+}
+
+body main .mobile-app .about-app .market:hover {
+    background-image: url(../images/button-google-play-hover.svg);
 }
 
 body main .mobile-app .phone {
@@ -246,7 +257,6 @@ body main .mobile-app .phone {
 
 body footer .rectangle {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #665F55;
     width: 100%;
@@ -284,6 +294,10 @@ body .rectangle .media .icon .instagram {
     height: 60px;
 }
 
+body .rectangle .media .icon .instagram:hover {
+    background-image: url(../images/instagram-hover.svg);
+}
+
 body .rectangle .media .icon .facebook {
     background-image: url(../images/facebook.svg);
     width: 60px;
@@ -303,40 +317,36 @@ body .rectangle .contact h3 {
     color: #E1D4C9;
 }
 
-body .rectangle .contact ul {
+body .rectangle .contact .info {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 262px;
-    list-style-type: none;
+    
 }
 
-body .rectangle .contact ul li {
+body .rectangle .contact 
+.info .address {
+    background-image: url(../images/address.svg);
+    width: 182px;
+    height: 28px;
+}
+
+body .rectangle .contact 
+.info .address:hover {
+    background-image: url(../images/address-hover.svg);
+}
+
+body .rectangle .contact 
+.info div {
+    display: flex;
+    gap: 4px;
+    height: 28px;
+    align-items: center;
+}
+
+body .rectangle .contact 
+.info p {
     font: 600 16px Inter;
     color: #E1D4C9;
-    position: relative;
-    padding-left: 28px;
-}
-
-body .rectangle .contact ul li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 2px;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-body .rectangle .contact ul li:first-child::before {
-    background-image: url(../images/pin-alt.svg);
-}
-
-body .rectangle .contact ul li:nth-child(2)::before {
-    background-image: url(../images/phone.svg);
-}
-
-body .rectangle .contact ul li:last-child::before {
-    background-image: url(../images/clock.svg);
 }
