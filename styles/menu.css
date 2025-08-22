@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1360px;
+    margin: 0 auto;
+    background-color: #E1D4C9;
+}
+
+body header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+body header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+body header nav p {
+    font: 600 16px Inter;
+    color: #403F3D;
+}
+
+body header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    height: 30px;
+}
+
+body header .menu p {
+    font: 600 16px Inter;
+    color: #403F3D;
+}
+
+body header .menu:hover {
+    border-bottom: 2px solid #403F3D;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+main .container h1 {
+    font: 600 60px Inter;
+    color: #403F3D;
+    text-align: center;
+    width: 800px;
+    height: 150px;
+}
+
+main .container h1 span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+main .container .selectors {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+main .container .selectors .coffee {
+    background-image: url(../images/coffee-active.svg);
+    width: 115px;
+    height: 46px;
+}
+
+main .container .selectors .tea {
+    background-image: url(../images/tea-inactive.svg);
+    width: 90px;
+    height: 46px;
+}
+
+main .container .selectors .dessert {
+    background-image: url(../images/dessert-inactive.svg);
+    width: 124px;
+    height: 46px;
+}
+
+main .assortment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+main .assortment .type-of-coffee {
+    width: 310px;
+    height: 506px;
+    border-radius: 40px;
+    border: 1px solid #C1B6AD;
+}
+
+main .assortment 
+.type-of-coffee .image-irish {
+    background-image: url(../images/irish.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-kahlua {
+    background-image: url(../images/kahlua.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-honey-raf {
+    background-image: url(../images/honey-raf.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-ice-cappuccino {
+    background-image: url(../images/ice-cappuccino.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-espresso {
+    background-image: url(../images/espresso.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-latte {
+    background-image: url(../images/latte.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-latte-macchiato {
+    background-image: url(../images/latte-macchiato.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .image-coffee-with-cognac {
+    background-image: url(../images/coffee-with-cognac.svg);
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+}
+
+main .assortment 
+.type-of-coffee .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 20px 0px 20px;
+}
+
+main .assortment .type-of-coffee 
+.description h2 {
+    font: 600 24px Inter;
+    color: #403F3D;
+    text-align: left;
+}
+
+main .assortment .type-of-coffee 
+.description p {
+    font: 400 16px Inter;
+    color: #403F3D;
+    text-align: left;
+}
+
+body footer .rectangle {
+    display: flex;
+    align-items: center;
+    background-color: #665F55;
+    width: 100%;
+    height: 450px;
+    border-radius: 40px;
+    margin: 100px 0 40px 0;
+}
+
+body footer .rectangle .media {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 530px;
+    height: 250px;
+    padding: 100px;
+}
+
+body footer .rectangle .media h1 {
+    font: 600 60px Inter;
+    color: #E1D4C9;
+}
+
+body .rectangle .media h1 span {
+    color: #B0907A;
+    font-style: Italic;
+}
+
+body .rectangle .media .icon {
+    display: flex;
+    gap: 12px;
+}
+
+body .rectangle .media .icon .instagram {
+    background-image: url(../images/instagram.svg);
+    width: 60px;
+    height: 60px;
+}
+
+body .rectangle .media .icon .instagram:hover {
+    background-image: url(../images/instagram-hover.svg);
+}
+
+body .rectangle .media .icon .facebook {
+    background-image: url(../images/facebook.svg);
+    width: 60px;
+    height: 60px;
+}
+
+body .rectangle .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 530px;
+    height: 186px;
+}
+
+body .rectangle .contact h3 {
+    font: 600 24px Inter;
+    color: #E1D4C9;
+}
+
+body .rectangle .contact .info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 262px;
+
+}
+
+body .rectangle .contact .info .address {
+    background-image: url(../images/address.svg);
+    width: 182px;
+    height: 28px;
+}
+
+body .rectangle .contact .info .address:hover {
+    background-image: url(../images/address-hover.svg);
+}
+
+body .rectangle .contact .info div {
+    display: flex;
+    gap: 4px;
+    height: 28px;
+    align-items: center;
+}
+
+body .rectangle .contact .info p {
+    font: 600 16px Inter;
+    color: #E1D4C9;
+}
