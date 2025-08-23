@@ -5,7 +5,7 @@
 
 body {
     width: 1360px;
-    margin: auto;
+    margin: 0 auto;
     background-color: #E1D4C9;
 }
 
@@ -13,6 +13,7 @@ body header {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    align-items: center;
 }
 
 body header nav {
@@ -27,16 +28,25 @@ body header nav p {
     color: #403F3D;
 }
 
+body header a {
+    text-decoration: none;
+}
+
 body header .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    height: 30px;
 }
 
 body header .menu p {
     font: 600 16px Inter;
     color: #403F3D;
+}
+
+body header .menu:hover {
+    border-bottom: 2px solid #403F3D;
 }
 
 body main .preview {

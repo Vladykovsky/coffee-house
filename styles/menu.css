@@ -28,6 +28,10 @@ body header nav p {
     color: #403F3D;
 }
 
+body header a {
+    text-decoration: none;
+}
+
 body header .menu {
     display: flex;
     justify-content: space-between;
@@ -73,26 +77,77 @@ main .container .selectors {
 }
 
 main .container .selectors .coffee {
-    background-image: url(../images/coffee-active.svg);
-    width: 115px;
-    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 8px 16px 8px 8px;
+    background-color: #665F55;
+    width: 91px;
+}
+
+main .container .selectors .coffee .cup {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 8px;
+    text-align: center;
+    background-color: #E1D4C9;
+}
+
+main .container .selectors .coffee p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #E1D4C9;
+    font: 600 16px Inter;
 }
 
 main .container .selectors .tea {
-    background-image: url(../images/tea-inactive.svg);
-    width: 90px;
-    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 8px 16px 8px 8px;
+    border: 1px solid #C1B6AD;
+    width: 65px;
+}
+
+main .container .selectors .tea .teapot {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 8px;
+    text-align: center;
+    background-color: #C1B6AD;
+}
+
+main .container .selectors p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #403F3D;
+    font: 600 16px Inter;
 }
 
 main .container .selectors .dessert {
-    background-image: url(../images/dessert-inactive.svg);
-    width: 124px;
-    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 8px 16px 8px 8px;
+    border: 1px solid #C1B6AD;
+    width: 99px;
+}
+
+main .container .selectors .dessert .cake {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 8px;
+    text-align: center;
+    background-color: #C1B6AD;
 }
 
 main .assortment {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
     margin-top: 40px;
@@ -103,90 +158,94 @@ main .assortment .type-of-coffee {
     height: 506px;
     border-radius: 40px;
     border: 1px solid #C1B6AD;
+    position: relative;
 }
 
-main .assortment 
-.type-of-coffee .image-irish {
+main .assortment .type-of-coffee .image-irish {
     background-image: url(../images/irish.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-kahlua {
+main .assortment .type-of-coffee .image-kahlua {
     background-image: url(../images/kahlua.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-honey-raf {
+main .assortment .type-of-coffee .image-honey-raf {
     background-image: url(../images/honey-raf.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-ice-cappuccino {
+main .assortment .type-of-coffee .image-ice-cappuccino {
     background-image: url(../images/ice-cappuccino.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-espresso {
+main .assortment .type-of-coffee .image-espresso {
     background-image: url(../images/espresso.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-latte {
+main .assortment .type-of-coffee .image-latte {
     background-image: url(../images/latte.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-latte-macchiato {
+main .assortment .type-of-coffee .image-latte-macchiato {
     background-image: url(../images/latte-macchiato.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .image-coffee-with-cognac {
+main .assortment .type-of-coffee .image-coffee-with-cognac {
     background-image: url(../images/coffee-with-cognac.svg);
     width: 310px;
     height: 310px;
     border-radius: 40px;
 }
 
-main .assortment 
-.type-of-coffee .description {
+main .assortment .type-of-coffee .description {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 20px 20px 0px 20px;
 }
 
-main .assortment .type-of-coffee 
-.description h2 {
+main .assortment .type-of-coffee .description h2 {
     font: 600 24px Inter;
     color: #403F3D;
     text-align: left;
 }
 
-main .assortment .type-of-coffee 
-.description p {
+main .assortment .type-of-coffee .description p {
     font: 400 16px Inter;
+    color: #403F3D;
+    text-align: left;
+    font-family: Inter;
+    line-height: 150%;
+}
+
+main .assortment .type-of-coffee .price {
+    position: absolute;
+    top: 456px;
+    left: 20px;
+}
+
+main .assortment .type-of-coffee .price h2 {
+    font: 600 24px Inter;
     color: #403F3D;
     text-align: left;
 }
