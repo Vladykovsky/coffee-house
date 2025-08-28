@@ -79,6 +79,11 @@ body main .preview h1 span {
 body main .preview p {
     font: 400 16px Inter;
     color: #E1D4C9;
+    line-height: 150%;
+}
+
+body main .preview .cafe a {
+    text-decoration: none;
 }
 
 body main .preview .cafe .menu-button {
@@ -155,6 +160,7 @@ body main .choose-coffee .carousel .description p {
     font: 400 16px Inter;
     color: #403F3D;
     text-align: center;
+    line-height: 150%;
 }
 
 body main .choose-coffee .carousel .right-arrow {
@@ -236,6 +242,8 @@ body main .mobile-app .about-app h1 span {
 body main .mobile-app .about-app p {
     font: 400 16px Inter;
     color: #403F3D;
+    font-family: Inter;
+    line-height: 150%;
 }
 
 body main .mobile-app .about-app .shop {
@@ -243,11 +251,77 @@ body main .mobile-app .about-app .shop {
     gap: 20px;
 }
 
-body main .mobile-app .about-app .store {
+body main .mobile-app .about-app .shop .store {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 20px;
+    border: 1px solid #665F55;
+    width: 177px;
+    height: 64px;
+    border-radius: 100px;
+}
+
+body main .mobile-app 
+.about-app .shop .store .left {
+    background-image: url(../images/apple-dark.svg);
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body main .mobile-app 
+.about-app .shop .store .right {
+    display: flex;
+    flex-direction: column;
+}
+
+body main .mobile-app 
+.about-app .shop .right .available {
+    font: 600 10px Inter;
+    color: #403F3D;
+    line-height: 140%;
+}
+
+body main .mobile-app 
+.about-app .shop .right .platform {
+    font: 600 16px Inter;
+    color: #403F3D;
+    line-height: 150%;
+}
+
+body main .mobile-app .about-app .shop .market {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 20px;
+    border: 1px solid #665F55;
+    width: 177px;
+    height: 64px;
+    border-radius: 100px;
+}
+
+body main .mobile-app 
+.about-app .shop .market .left {
+    background-image: url(../images/market-dark.svg);
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body main .mobile-app 
+.about-app .shop .market .right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* body main .mobile-app .about-app .store {
     background-image: url(../images/button-store.svg);
     width: 200px;
     height: 64px;
-}
+} 
 
 body main .mobile-app .about-app .store:hover {
     background-image: url(../images/button-store-hover.svg);
@@ -261,7 +335,7 @@ body main .mobile-app .about-app .market {
 
 body main .mobile-app .about-app .market:hover {
     background-image: url(../images/button-google-play-hover.svg);
-}
+} */
 
 body main .mobile-app .phone {
     background-image: url(../images/mobile-screens.svg);
